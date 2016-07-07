@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+    
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
+    <link rel="icon" href="images/2.jpg" type="image/png" />
+    <link rel="shortcut icon" href="images/2.jpg" type="image/png" />
+    <title>发表博文</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" />
+	<link href="css/fileinput.min.css" type="text/css" rel="stylesheet" />
+	<link href="font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	
+	<link href="http://libs.useso.com/js/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://libs.useso.com/js/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link href="css/editor.css" type="text/css" rel="stylesheet"/>
+	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fileinput.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/ajax-mail.js"></script>
+    <script type="text/javascript" src="js/accordion.settings.js"></script>
+	
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<!-- header -->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="span4 logo">
+                <a href="index.html"><img src="images/5.png" alt="logo" /></a>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul class="clearfix">
+			    <li><a href="blog_post.html"  class="current">发表博文</a></li>	
+                <li><a href="contact.html">联系我</a></li>				
+				<li><a href="blog.html">我的博文</a></li>
+				<li><a href="photo.html">浏览照片</a></li>
+				<li><a href="introduction.html">个人简介</a></li>
+				<li><a href="index.html" >主页</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--container-->
+<section id="container">
+  <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
+    <div class="container marginbot-50">	
+        <div class="title-divider">     
+            <h3>Blog post</h3>		
+            <div class="divider-arrow"></div>
+        </div>
+		
+		<div style="margin: 0 auto;">
+                        <div class="row">
+                            <div class="span8">
+                                <div class="title-divider">
+								    <h5>博文主题</h5>
+                                    <div class="divider-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="span8">
+
+                                <input type="text" class="form-control" id="subject" placeholder="请输入主题"> 								
+
+                            </div>
+                            <div class="spacer"></div>
+                        </div>
+		</div>
+		
+		<div style="margin: 0 auto;">
+                        <div class="row">
+                            <div class="span8">
+                                <div class="title-divider">
+								    <h5>博文标签</h5>
+                                    <div class="divider-arrow"></div>
+                                </div>
+                            </div>
+							<div class="span8">
+                                <input type="text" class="form-control" id="tag" placeholder="请输入标签"> 								
+                            </div>
+                            
+                            <div class="spacer"></div>
+                        </div>
+		</div>
+		
+		<div style="margin: 0 auto;">
+                        <div class="row">
+                            <div class="span8">
+                                <div class="title-divider">
+								    <h5>博文内容</h5>
+                                    <div class="divider-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="span8">
+                                <div class="block-grey wrap15">
+                                <div id="txtEditor"></div>  								
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                        </div>
+		</div>
+		
+				<div style="margin: 0 auto;">
+                        <div class="row">
+                            <div class="span8">
+                                <div class="title-divider">
+								    <h5>添加图片/视频</h5>
+                                    <div class="divider-arrow"></div>
+                                </div>
+                            </div>
+                           <div class="container kv-main">
+            <form enctype="multipart/form-data">           
+                <hr>
+                <div class="form-group">
+                    <input id="file-4" type="file" class="file" data-upload-url="#">
+                </div>
+                <hr>
+                <div class="form-group">
+                    <button class="btn btn-primary">发表博文</button>
+                </div>
+            </form>
+              <br>
+                          </div>
+                            <div class="spacer"></div>
+                        </div>
+		        </div>
+	</div>
+</section>
+
+<!--footer menu-->
+<section id="footer-menu">
+    <div class="container">
+        <div class="row">
+            <p class="span12"> Blog of wenshao | Created by wenshao</span></p>
+        </div>
+    </div>
+</section>
+	<script>
+    $('#file-fr').fileinput({
+        language: 'fr',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $('#file-es').fileinput({
+        language: 'es',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $("#file-0").fileinput({
+        'allowedFileExtensions' : ['jpg', 'png','gif'],
+    });
+    $("#file-1").fileinput({
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+    /*
+    $(".file").on('fileselect', function(event, n, l) {
+        alert('File Selected. Name: ' + l + ', Num: ' + n);
+    });
+    */
+	$("#file-3").fileinput({
+		showUpload: false,
+		showCaption: false,
+		browseClass: "btn btn-primary btn-lg",
+		fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+	});
+	$("#file-4").fileinput({
+		uploadExtraData: {kvId: '10'}
+	});
+    $(".btn-warning").on('click', function() {
+        if ($('#file-4').attr('disabled')) {
+            $('#file-4').fileinput('enable');
+        } else {
+            $('#file-4').fileinput('disable');
+        }
+    });    
+    $(".btn-info").on('click', function() {
+        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+    });
+    /*
+    $('#file-4').on('fileselectnone', function() {
+        alert('Huh! You selected no files.');
+    });
+    $('#file-4').on('filebrowse', function() {
+        alert('File browse clicked for #file-4');
+    });
+    */
+    $(document).ready(function() {
+        $("#test-upload").fileinput({
+            'showPreview' : false,
+            'allowedFileExtensions' : ['jpg', 'png','gif'],
+            'elErrorContainer': '#errorBlock'
+        });
+        /*
+        $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+            alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+        });
+        */
+    });
+	</script>
+	<script src="js/editor.js"></script>
+	<script type="text/javascript">
+    $(document).ready( function() {
+       $("#txtEditor").Editor();                    
+    });
+    </script>    
+</body>
+</html>
