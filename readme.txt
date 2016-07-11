@@ -1,0 +1,19 @@
+这个网站的构想是这样的：一开始进入一个登陆界面（index.html和login.php),游客访问文件是blog_wenshao/blog_client文件，管理员文件是blog_wenshao/blog_master.
+blog_wenshao/blog_client文件:
+    1.index.html:博客主页。
+	2.introduction.html:个人简介。
+	3.photo.html:浏览照片。
+	4.blog.php:我的博文。
+	5.blog_show.html:博文的详细信息。
+	6.contact.html：联系我。
+	
+blog_wenshao/blog_master文件:
+    1.index.html:博客主页。
+	2.introduction.html:个人简介。
+	3.photo.html:浏览照片。
+	4.blog.php:我的博文。
+	5.blog_show.html:博文的详细信息。
+	6.contact.html：联系我。
+	7.blog_add.php:添加博文。
+	8.blog_delete:删除博文。
+	9.sql.php：连接数据库，并把数据存放在数据库。
